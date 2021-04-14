@@ -1,0 +1,39 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{ /* reseta tudo e formatação padrão*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* border-box: nao deixara nada sair da caixa, mesmo o texto se expremendo. */
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /* se não colocasse o vsc colocaria automaticamente*/
+    align-items: center; /* alinha no centro */
+    justify-content: space-between; /* esse espaço fica entre o netflix e o menu de navegação*/
+}
+
+header .logo {
+    margin-left: 5px; /* */
+    color: var(--vermelho); /* */
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /* remove as linhas do link */
+    color: #aaa;
+    margin-right: 10px;   
+}
+
+header nav a:hover {
+    color: #fff;
+}
