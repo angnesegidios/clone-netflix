@@ -9,14 +9,16 @@
     box-sizing: border-box;
 } /* border-box: nao deixara nada sair da caixa, mesmo o texto se expremendo. */
 
+/*elementos base */
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
     display: flex;
-    flex-direction: row; /* se não colocasse o vsc colocaria automaticamente*/
+    flex-direction: row; /* alinha na horizontal, se não colocasse o vsc colocaria automaticamente*/
     align-items: center; /* alinha no centro */
     justify-content: space-between; /* esse espaço fica entre o netflix e o menu de navegação*/
 }
@@ -36,4 +38,24 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* alinha na vertical */
+    justify-content: center;
+    align-items: flex-start; /* começa da esquerda pra direita*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
