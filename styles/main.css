@@ -54,8 +54,38 @@ header nav a:hover {
 
 .filme-principal .descricao {
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
-.titulo {
+.filme-principal .titulo {
+    margin-top: 15%; /* calculo automatico usando %% */
     font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50); /* .50 é a transparencia */
+    color: white;
+    border: none;
+    
+    padding: 15px 30px; /* padding com 1 valor: espaço interno e todos os lados */
+    /* padding com 2 valores: 30px horizontal e 15px vertical */
+    /* padding com 4 valores: são os 4 lados */
+    margin-right: 15px; /* espaçamento entre os botoes */
+    font-size: 12px; /* tamanho da fonte do botao */
+    
+    transition: .3s ease all; /* .3s é velocidade do efeito */
+    cursor: pointer; /* curso ponteiro muda */    
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    /* hover é o efeito no botao/ é as cores contrarias dos botao */   
+}
+
+.botao i { 
+    margin-right: 8px;
+    /* espaçamento dos icones e textos
+    o "i" é referente ao site: kit.fontawesom.com o script que esta no html */
 }
