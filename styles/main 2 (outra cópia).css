@@ -1,0 +1,124 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{ /* reseta tudo e formatação padrão*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* border-box: nao deixara nada sair da caixa, mesmo o texto se expremendo. */
+
+/*elementos base */
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /* alinha na horizontal, se não colocasse o vsc colocaria automaticamente*/
+    align-items: center; /* alinha no centro */
+    justify-content: space-between; /* esse espaço fica entre o netflix e o menu de navegação*/
+}
+
+header .logo {
+    margin-left: 5px; /* */
+    color: var(--vermelho); /* */
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /* remove as linhas do link */
+    color: #aaa;
+    margin-right: 10px;   
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* alinha na vertical */
+    justify-content: center;
+    align-items: flex-start; /* começa da esquerda pra direita*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%; /* calculo automatico usando %% */
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50); /* .50 é a transparencia */
+    color: white;
+    border: none;
+    
+    padding: 15px 30px; /* padding com 1 valor: espaço interno e todos os lados */
+    /* padding com 2 valores: 30px horizontal e 15px vertical */
+    /* padding com 4 valores: são os 4 lados */
+    margin-right: 15px; /* espaçamento entre os botoes */
+    font-size: 12px; /* tamanho da fonte do botao */
+    
+    transition: .3s ease all; /* .3s é velocidade do efeito */
+    cursor: pointer; /* curso ponteiro muda */    
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    /* hover é o efeito no botao/ é as cores contrarias dos botao */   
+}
+
+.botao i { 
+    margin-right: 8px;
+    /* espaçamento dos icones e textos
+    o "i" é referente ao site: kit.fontawesom.com o script que esta no html */
+}
+/* ver  */
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+    height: 5%;
+}
+
+/* modelo demo basic */
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+
+/*.box-filme {
+     modelo auto play  
+    autoplay:false
+    autoplayTimeout:3000
+    autoplayHoverPause:false
+
+    height: 100%;
+    }
+    */

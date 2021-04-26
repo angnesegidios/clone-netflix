@@ -1,0 +1,17 @@
+@media screen and (max-width:700px){ /* */
+    header .container{
+    display: flex;
+    flex-direction: column; /* botoes NAV ficam embaixo da netflix, quando estiver menor que 700px */
+    }
+    /* margin dos botoes para nao ficarem colados */
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+    /* descrição nao se espalha na tela toda */
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
